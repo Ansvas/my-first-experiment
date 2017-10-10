@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+	body{font-size: 1.0em;
+		color: blue;
+		padding-top: 2em;
+		padding-left:10em;
+		padding-bottom: 5em;}
+	.hidden{display: none;}
+	.show{display: inline !important;}
+	button{
+		border: 10px solid black; background: #E5E4E2;
+		font-size: .5em;font-weight: bold;color: green;
+		padding: .8em 2em;
+		margin-top: .4em; 
+	}
+</style>
+	<title>
+		content page
+	</title>
+	<body>
+
+	<h3 id="text"> enter data in events section</h3><br/>
+	<textarea id="eventsdatablock" placeholder="enter tet of events block"></textarea><br/>
+	enter data in extra section<br/>
+	<textarea id="extradatablock" placeholder="enter tet in extra block"></textarea><br/>
+	enter data in classroom section<br/>
+	<textarea id="classroomdatablock" placeholder="enter text in classroom block"></textarea> <br/>
+	<button id="submitbutton" onclick="submitclick()" value="submit" text="submit"></button>
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBqGgTAnrhBwBDmMs2iD3l61qNJ8JNtHO4",
+    authDomain: "sitapp-179717.firebaseapp.com",
+    databaseURL: "https://sitapp-179717.firebaseio.com",
+    projectId: "sitapp-179717",
+    storageBucket: "sitapp-179717.appspot.com",
+    messagingSenderId: "98680859380"
+  };
+  firebase.initializeApp(config);
+</script>
+	<script src="content page.js">
+
+	</script>
+
+	</body>
+</head>
+</html>
+
+
+
